@@ -28,7 +28,13 @@ formEl.addEventListener("submit",()=>{
 })
 
 function updateLocalStorage(){
-    localStorage.setItem("score", JSON.stringify(score))
+    localStorage.setItem("score", JSON.stringify(score));
 }
+
+formEl.addEventListener("reset",()=>{
+    localStorage.setItem("score", JSON.stringify(0));
+    score = JSON.parse(localStorage.getItem("score"));
+    scoreEl.innerText=` Score = ${score}`;
+})
 
 scoreEl.innerText=` Score = ${score}`;

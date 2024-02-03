@@ -44,7 +44,14 @@ body{
     font-family: cursive;
     cursor: pointer;
 }
-
+.btn1{
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    font-family: cursive;
+    cursor: pointer;
+    height: 20px;
+}
 .btn:hover{
     filter: brightness(0.9);
 }
@@ -52,4 +59,11 @@ body{
 .score{
     color: green;
     text-align: right;
+    margin-right: 10px;
+}
+
+.score1{
+    display: flex;
+    align-items: center;
+    justify-content: end;
 }
